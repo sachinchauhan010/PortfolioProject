@@ -38,3 +38,5 @@ export const projectList=[
         webName:"Sid Cup Family Golf",
     }, 
 ]
+
+export const resumeLink="https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/myResume.png";
