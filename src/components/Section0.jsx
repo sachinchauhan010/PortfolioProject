@@ -1,8 +1,8 @@
 import photo from "../images/image.png";
-const Section0=()=>{
-    return(
-        <div>
-            <div className="md:flex md:justify-center gap-x-10 md:p-8 bg-blue-50 text-center relative">
+const Section0 = () => {
+  return (
+    <div>
+      <div className="md:flex md:justify-center gap-x-10 md:p-8 bg-blue-50 text-center relative">
         <div className="flex-col items-center md:items-center md:justify-center md:w-1/2 font-Roboto p-2 md:text-start">
           <p className="md:text-4xl xl:text-6xl text-3xl font-bold text-blue-900 md:my-4 my-2">
             Hello, I am <br />
@@ -33,11 +33,10 @@ const Section0=()=>{
         />
 
         <p className="md:text-6xl xl:text-8xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">
-          SACHIN
+          SACHIN CHAUHAN
         </p>
       </div>
-
-        </div>
-    )
-}
+    </div>
+  );
+};
 export default Section0;

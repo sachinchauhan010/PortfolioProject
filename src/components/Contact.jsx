@@ -2,7 +2,7 @@ const Contact = () => {
   return (
     <>
       <div>
-      <section className="font-Roboto m-10 text-center">
+      <section className="font-Roboto p-10 text-center bg-blue-50">
       <div className="container flex-col items-center justify-center">
         <h2 className="md:text-2xl lg:text-4xl text-xl font-semibold m-5 text-blue-800">Contact Me</h2>
         <h3 className="md:text-xl lg:text-2xl text-lg font-semibold text-gray-500">Questions, Thoughts, Or Just Want To Say Hello?</h3>
