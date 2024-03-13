@@ -49,3 +49,37 @@ export const resumeLink =
   "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/myResume.png";
 export const contactImg =
   "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fcontact-us&psig=AOvVaw0Y-vMNagbAOFUt0y_RzQiY&ust=1710407110741000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKj8wpjx8IQDFQAAAAAdAAAAABAF";
+
+export const Tools=[
+  {
+    id:1,
+    name:"HTML",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Html.png"
+  },
+  {
+    id:2,
+    name:"CSS",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/CSS.png",
+  },
+  {
+    id:3,
+    name:"JavaScript",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/JavaScript.png",
+  },
+  {
+    id:4,
+    name:"Tailwind",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Tailwind.png",
+  },
+  {
+    id:5,
+    name:"Git",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/git.png",
+  },
+  {
+    id:6,
+    name:"Git hub",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/github.png",
+  },
+
+]

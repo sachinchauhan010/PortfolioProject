@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Section2 = () => {
   return (
     <>
-      <div className="flex justify-center items-center m-10 gap-x-20 shadow-2xl">
+      <div className="flex justify-center items-center m-10 gap-x-20 shadow-2xl rounded-lg">
         <div>
           <p className="md:text-2xl xl:text-3xl text-xl font-bold text-blue-900 md:my-4 my-2">
             Get In Touch

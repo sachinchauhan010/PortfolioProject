@@ -2,7 +2,7 @@ import photo from "../images/image.png";
 const Section1 = () => {
   return (
     <>
-      <div className="flex justify-center items-center p-10 bg-fuchsia-100 md:gap-x-10 text-center md:text-start font-Roboto">
+      <div className="flex justify-center items-center p-10 md:gap-x-10 text-center md:text-start font-Roboto bg-violet-100">
         <img
           src={photo}
           alt=""
