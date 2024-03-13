@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Project = () => {
   const projects = projectList;
   return (
-    <div className="font-Roboto m-5">
+    <div className="font-Roboto m-5 box-border">
       <div className="flex justify-evenly items-center ">
         <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center text-fuchsia-700">
           Projects that I had made

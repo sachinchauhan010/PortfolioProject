@@ -81,5 +81,52 @@ export const Tools=[
     name:"Git hub",
     imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/github.png",
   },
+  {
+    id:7,
+    name:"C++",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/C%2B%2B.png",
+  },
+  {
+    id:8,
+    name:"JAVA",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Java.png",
+  },
+  {
+    id:8,
+    name:"SQL",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/sql.png",
+  },
 
+];
+
+export const Education=[
+  {
+    id:1,
+    degree:"High School",
+    marks:"89.33%",
+    college:"Mukhai Smarak UMV Gokulpura Mau",
+    year:"2018"
+  },
+  
+  {
+    id:2,
+    degree:"Inter",
+    marks:"87.8%",
+    college:"Ram Nagina Inter College",
+    year:"2020"
+  },
+  {
+    id:3,
+    degree:"Graducation",
+    marks:"8.74 CGPA",
+    college:"PGDAV College University of Delhi",
+    year:"2020-2023"
+  },
+  {
+    id:4,
+    degree:"Post Graducation",
+    marks:"0.0 CGPA",
+    college:"Madan Mohan Malaviya University of Technology, Gorkhpur",
+    year:"2023-2025",
+  },
 ]

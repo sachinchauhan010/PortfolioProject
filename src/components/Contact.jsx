@@ -7,7 +7,7 @@ const Contact = () => {
         <h2 className="md:text-2xl lg:text-4xl text-xl font-semibold m-5 text-blue-800">Contact Me</h2>
         <h3 className="md:text-xl lg:text-2xl text-lg font-semibold text-gray-500">Questions, Thoughts, Or Just Want To Say Hello?</h3>
 
-        <div className="w-[50%] m-auto my-10">
+        <div className="lg:w-[50%] m-auto my-10 w-full">
           <form action="#" className="">
             <div className="my-4">
               <input className="formField w-full h-12 px-8 text-lg border-none rounded-md shadow-md bg-opacity-90 bg-white outline-none" type="text" placeholder="Enter your name" />

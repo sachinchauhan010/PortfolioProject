@@ -2,7 +2,7 @@ import photo from "../images/image.png";
 const Section0 = () => {
   return (
     <div>
-      <div className="md:flex md:justify-center gap-x-10 md:p-8 bg-blue-50 text-center relative">
+      <div className="md:flex md:justify-center gap-x-10 md:p-8 bg-blue-50 text-center relative box-border">
         <div className="flex-col items-center md:items-center md:justify-center md:w-1/2 font-Roboto p-2 md:text-start">
           <p className="md:text-4xl xl:text-6xl text-3xl font-bold text-blue-900 md:my-4 my-2">
             Hello, I am <br />
@@ -29,7 +29,7 @@ const Section0 = () => {
         <img
           src={photo}
           alt=""
-          className="object-contain w-[280px] sm:ml-auto sm:mr-auto md:mx-10 p-2 rounded-md shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 hover:scale-110 duration-500"
+          className="h-[375px] w-[370px] sm:ml-auto sm:mr-auto md:mx-10 rounded-[50%] shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 bg-yellow-300  hover:scale-110 duration-500"
         />
 
         <p className="md:text-6xl xl:text-8xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">

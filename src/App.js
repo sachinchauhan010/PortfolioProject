@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 import Project from "./components/Project";
 function App() {
   return (
-    <div>
+    <div className="">
       <Header />
       <Outlet />
     </div>
