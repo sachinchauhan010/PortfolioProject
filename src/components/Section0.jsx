@@ -29,10 +29,10 @@ const Section0 = () => {
         <img
           src={photo}
           alt=""
-          className="h-[375px] w-[370px] sm:ml-auto sm:mr-auto md:mx-10 rounded-[50%] shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 bg-yellow-300  hover:scale-110 duration-500"
+          className="h-[350px] w-[350px] sm:ml-auto sm:mr-auto md:mx-10 rounded-[50%] shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 bg-yellow-300 hover:scale-110 duration-500 overflow-hidden"
         />
 
-        <p className="md:text-6xl xl:text-8xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">
+        <p className="md:text-4xl xl:text-6xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">
           SACHIN CHAUHAN
         </p>
       </div>

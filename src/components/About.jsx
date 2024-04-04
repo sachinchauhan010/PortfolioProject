@@ -1,17 +1,44 @@
 import { Link } from "react-router-dom";
 import { Education } from "../utils/Data";
-import { LeetCode, HackerRank } from "../utils/icons";
+import { resumeLink } from "../utils/Data";
+
 const About = () => {
-  const { id, degree, college, year, marks } = Education;
+  const downloadResume = () => {
+    fetch(resumeLink)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "Resume.pdf");
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+      })
+      .catch((error) => {
+        console.error("Error fetching the resume:", error);
+      });
+  };
+
   return (
     <div>
-      <div className=" py-10 bg-blue-100 box-border">
+      <div className="md:py-10 bg-blue-100 box-border py-20">
+        <button
+          onClick={downloadResume}
+          className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
+        >
+          Download Resume
+        </button>
+
         <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
           Education
         </p>
-        <p className="flex-col justify-center md:items-center item-start mx-20">
+        <p className="flex-col justify-center md:items-center item-start md:mx-20 m-4">
           {Education.map((item) => (
-            <div className="w-full lg:w-2/3 m-auto my-5 shadow-lg shadow-orange-200 h-fit text-center p-4 text-fuchsia-600 bg-blue-50">
+            <div
+              key={item.degree} // Added key prop for list items
+              className="w-full lg:w-2/3 m-auto my-5 shadow-lg shadow-orange-200 h-fit text-center p-4 text-fuchsia-600 bg-blue-50"
+            >
               <p className="md:text-xl xl:text-2xl text-lg font-bold text-blue-900 text-center my-2">
                 {item.degree}
               </p>
@@ -28,21 +55,40 @@ const About = () => {
           ))}
         </p>
 
-        <div className="bg-fuchsia-100">
-          <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-8 my-2 text-center ">
+        <div className="bg-fuchsia-100 p-3">
+          <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
             Skills
           </p>
-          <div>
-            <div className="flex justify-center">
-              <p className="md:text-lg text-base lg:text-xl font-semibold text-center md:text-start px-10 md:p-0 mr-20">Web Development : </p>
-              <Link to={"/project"} className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2">See My Projects</Link>
+          <div className="flex justify-center flex-wrap gap-x-10 p-10">
+            <div className="h-32 md:w-[300px] w-full shadow-xl m-3 p-6 text-center bg-blue-50 rounded-lg">
+              <p className="text-2xl font-bold text-blue-800 mb-2">
+                Web Development
+              </p>
+              <Link
+                to={"/project"}
+                className="md:text-lg text-base font-semibold text-center  md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2"
+              >
+                See My Projects
+              </Link>
             </div>
-            <div className="flex justify-center">
-              <p className="md:text-lg text-base lg:text-xl font-semibold text-center md:text-start px-10 my-5 md:p-0 mr-10">Problem Solver : </p>
-              <div className="self-center">
-                <Link to={"https://leetcode.com/010sachin/"} target="_blank" className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2">LeetCode</Link>
-                <Link to={"https://www.hackerrank.com/profile/010sssachin"} target="_blank" className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2">Hacker Rank</Link>
-              </div>
+            <div className="h-32 md:w-[300px] w-full shadow-xl m-3 p-6 text-center bg-blue-50 rounded-lg">
+              <p className="text-2xl font-bold text-blue-800 mb-2">
+                Problem Solving
+              </p>
+              <Link
+                to={"https://leetcode.com/010sachin/"}
+                target="_blank"
+                className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2"
+              >
+                LeetCode
+              </Link>
+              <Link
+                to={"https://www.hackerrank.com/profile/010sssachin"}
+                target="_blank"
+                className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2"
+              >
+                Hacker Rank
+              </Link>
             </div>
           </div>
         </div>
@@ -50,4 +96,5 @@ const About = () => {
     </div>
   );
 };
+
 export default About;

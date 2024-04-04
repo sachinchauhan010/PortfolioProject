@@ -24,7 +24,7 @@ const Section3 = (props) => {
 
   return (
     <>
-      <div className="m-10 shadow-xl p-10 rounded-md font-Roboto bg-blue-100">
+      <div className="m-2 shadow-xl p-10 rounded-md font-Roboto bg-blue-100">
         <p className="md:text-2xl xl:text-3xl text-xl font-bold text-blue-900 my-2 text-center md:mb-10">
           Tools & Language I used
         </p>

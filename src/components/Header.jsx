@@ -6,7 +6,6 @@ const Header = () => {
     { name: "Home", link: "/", id: 1 },
     { name: "Projects", link: "/project", id: 2 },
     { name: "About", link: "/about", id: 3 },
-    { name: "Resume", link: "/resume", id: 4 },
     { name: "Contact me", link: "/contact", id: 4 },
   ];
   let [open, setOpen] = useState(false);
@@ -45,7 +44,6 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        {/* button */}
       </div>
     </div>
   );

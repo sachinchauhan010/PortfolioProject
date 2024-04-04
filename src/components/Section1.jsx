@@ -8,7 +8,7 @@ const Section1 = () => {
           alt=""
           className="object-contain hidden md:block w-[280px] sm:ml-auto sm:mr-auto md:mx-10 p-2 rounded-md shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
         />
-        <div className="flex-col flex-wrap px-10">
+        <div className="flex-col flex-wrap md:px-10 p-2">
           <p className="md:text-3xl xl:text-5xl text-2xl font-bold text-blue-900 md:my-4 my-2">
             Frontend Web Developer
           </p>
@@ -18,7 +18,7 @@ const Section1 = () => {
             reprehenderit fugit harum ipsa quas accusantium. Quis quo
             dignissimos modi voluptatibus, culpa quae id.
           </p>
-          <div className="flex md:justify-start justify-around gap-x-10">
+          <div className="flex justify-start md:gap-x-10 gap-x-4">
             <button className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center">
               Main Skills
             </button>

@@ -8,7 +8,6 @@ import Contact from "./components/Contact";
 import About from "./components/About";
 import Hero from "./components/Hero";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Resume from "./components/Resume";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const appRouter = createBrowserRouter([
@@ -28,10 +27,7 @@ const appRouter = createBrowserRouter([
         path: "/contact",
         element: <Contact />,
       },
-      {
-        path: "/resume",
-        element: <Resume />,
-      },
+     
       {
         path: "/project",
         element: <Project />,
