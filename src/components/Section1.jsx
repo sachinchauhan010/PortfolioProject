@@ -13,11 +13,18 @@ const Section1 = () => {
             Frontend Web Developer
           </p>
           <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            accusamus rem, error quod perspiciatis exercitationem, consequatur
-            reprehenderit fugit harum ipsa quas accusantium. Quis quo
-            dignissimos modi voluptatibus, culpa quae id.
+            My journey in the world of web development began with a fascination
+            for the endless possibilities of the internet. I've honed my skills
+            in HTML, CSS, JavaScript, React Js and Tailwind constantly pushing
+            the boundaries of what's possible in the browser. I thrive on turning concepts
+            into reality through clean, efficient code.
           </p>
+          <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 mt-6">
+            I bring a collaborative spirit to every project. I understand the
+            importance of effective communication and teamwork in delivering
+            outstanding results.
+          </p>
+
           <div className="flex justify-start md:gap-x-10 gap-x-4">
             <button className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center">
               Main Skills
@@ -26,8 +33,12 @@ const Section1 = () => {
               Education
             </button>
           </div>
-          <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 text-gray-600 cursor-pointer my-4">Web Development</p>
-          <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 text-gray-600 cursor-pointer my-4">Problem Solving</p>
+          <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 text-gray-600 cursor-pointer my-4">
+            Frontend Web Development
+          </p>
+          <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 text-gray-600 cursor-pointer my-4">
+            Problem Solving
+          </p>
         </div>
       </div>
     </>

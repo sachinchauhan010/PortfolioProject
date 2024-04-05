@@ -1,3 +1,5 @@
+import { Gmail, Twitter, LinkedIn } from "../utils/icons";
+import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <>
@@ -54,6 +56,25 @@ const Contact = () => {
                   </button>
                 </div>
               </form>
+            </div>
+          </div>
+          <div className="bg-blue-900 py-10 shadow-xl lg:w-[50%] m-auto my-10 w-full rounded-md">
+            <h2 className="md:text-xl lg:text-2xl text-lg font-semibold text-gray-300">I am on Social</h2>
+            <div className="flex flex-col justify-center pt-6 lg:pt-0 mt-10">
+              <div className="flex justify-center gap-x-10 flex-row text-white">
+                <Link
+                  to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
+                  target="_blank"
+                >
+                  {Twitter}
+                </Link>
+                <Link to="www.linkedin.com/in/sachinchauhan010" target="_blank">
+                  {LinkedIn}
+                </Link>
+                <Link to="010sssachin@gmail.com" target="_blank">
+                  {Gmail}
+                </Link>
+              </div>
             </div>
           </div>
         </section>
