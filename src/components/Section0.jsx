@@ -29,7 +29,7 @@ const Section0 = () => {
         <img
           src={photo}
           alt=""
-          className="h-[370px] w-[370px] md:mx-10 rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-auto bg-yellow-300 hover:scale-110 duration-500 overflow-hidden"
+          className="h-[350px] w-[350px] md:mx-10 rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 bg-yellow-300 hover:scale-110 duration-500 overflow-hidden"
         />
 
         <p className="md:text-4xl xl:text-6xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">
