@@ -7,19 +7,31 @@ const Footer = () => {
         <div className="container flex md:flex-row flex-col justify-between p-4 m-0 md:p-8 lg:flex-row dark:divide-gray-400">
           <div className="py-6 space-y-4">
             <p className="text-lg font-semibold">Sachin 💖 Chauhan</p>
-            <ul className="self-center md:text-center text-start flex md:flex-row flex-col space-y-2 md:gap-x-10">
+            <div className="self-center md:text-center text-start flex md:flex-row flex-col justify-center items-center space-y-2 md:gap-x-10">
               <Link to={"/about"}>About</Link>
               <Link to={"/resume"}>Resume</Link>
               <Link to={"/project"}>Projects</Link>
               <Link to={"/contact"}>Contact me</Link>
-            </ul>
+            </div>
           </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0">
             <div className="flex justify-center gap-x-10 flex-row ">
+              <Link
+                to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
+                target="_blank"
+              >
+                {Twitter}
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/sachinchauhan010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                target="_blank"
+              >
+                {LinkedIn}
+              </Link>
               <Link to="/">{Insta}</Link>
-              <Link to="/">{Twitter}</Link>
-              <Link to="/">{LinkedIn}</Link>
-              <Link to="/">{Gmail}</Link>
+              <Link to="010sssachin@gmail.com" target="_blank">
+                {Gmail}
+              </Link>
             </div>
           </div>
         </div>
