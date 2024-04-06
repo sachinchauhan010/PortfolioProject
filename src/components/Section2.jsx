@@ -1,4 +1,4 @@
-import { Twitter, Gmail, LinkedIn, Insta } from "../utils/icons";
+import { Twitter, Gmail, LinkedIn} from "../utils/icons";
 import contactImg from "../images/contactImg.png";
 import { Link } from "react-router-dom";
 const Section2 = () => {
