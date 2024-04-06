@@ -23,7 +23,7 @@ const Footer = () => {
                 {Twitter}
               </Link>
               <Link
-                to="www.linkedin.com/in/sachinchauhan010"
+                to="https://www.linkedin.com/in/sachinchauhan010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
               >
                 {LinkedIn}

@@ -33,9 +33,9 @@ const Section3 = (props) => {
           className=""
         >
           {tools.map((tool) => (
-            <div className="h-32">
-              <img src={tool.imgLink} alt="" className="w-1/3 h-20 m-auto self-center" />
-              <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0 m-3">
+            <div className="h-36">
+              <img src={tool.imgLink} alt="" className="sm:w-1/3 w-2/5 h-20 m-auto self-center" />
+              <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start md:px-3 m-3 sm:mx-20 mx-10">
                 {tool.name}
               </p>
             </div>

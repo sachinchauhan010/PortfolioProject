@@ -22,17 +22,19 @@ const Section2 = () => {
                 Contact me
               </Link>
               <div className="flex justify-center space-x-6 mt-4 flex-wrap">
-                <Link to={"/"} className="cursor-pointer">
+                <Link to={"https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"} target="_blank" className="cursor-pointer">
                   {Twitter}
                 </Link>
-                <Link to={"/"} className="cursor-pointer">
+                <Link to={"010sssachin@gmail.com"} target="_blank" className="cursor-pointer">
                   {Gmail}
                 </Link>
-                <Link to={"/"} className="cursor-pointer">
+                <Link
+                  to={
+                    "https://www.linkedin.com/in/sachinchauhan010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  } target="_blank"
+                  className="cursor-pointer"
+                >
                   {LinkedIn}
-                </Link>
-                <Link to={"/"} className="cursor-pointer">
-                  {Insta}
                 </Link>
               </div>
             </div>
