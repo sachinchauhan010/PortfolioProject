@@ -1,6 +1,27 @@
 import { Gmail, Twitter, LinkedIn } from "../utils/icons";
 import { Link } from "react-router-dom";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_ri7h3pr", "template_jjgrli9", form.current, {
+        publicKey: "z0eFejMA2I3fdToog",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          // e.target.reset();
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
+
   return (
     <>
       <div>
@@ -14,12 +35,13 @@ const Contact = () => {
             </h3>
 
             <div className="lg:w-[50%] m-auto my-10 w-full">
-              <form action="#" className="">
+              <form action="#" className="" ref={form} onSubmit={sendEmail}>
                 <div className="my-4">
                   <input
                     className="formField w-full h-12 px-8 text-lg border-none rounded-md shadow-md bg-opacity-90 bg-white outline-none"
                     type="text"
                     placeholder="Enter your name"
+                    name="to_name"
                   />
                 </div>
                 <div className="my-4">
@@ -27,15 +49,17 @@ const Contact = () => {
                     className="formField w-full h-12 px-8 text-lg border-none rounded-md shadow-md bg-opacity-90 bg-white"
                     type="email"
                     placeholder="Enter your email address"
+                    name="from_name"
                   />
                 </div>
-                <div className="my-4">
+                {/* <div className="my-4">
                   <input
                     className="formField w-full h-12 px-8 text-lg border-none rounded-md shadow-md bg-opacity-90 bg-white"
                     type="text"
                     placeholder="Enter your Subject address"
+                    name="from_name"
                   />
-                </div>
+                </div> */}
                 <div className="my-4">
                   <textarea
                     className="formField w-full px-8 pt-4 text-lg border-none rounded-md shadow-md bg-opacity-90 bg-white"
@@ -46,20 +70,20 @@ const Contact = () => {
                     placeholder="Enter your message"
                   ></textarea>
                 </div>
-                <div className="formBtn">
-                  <button
-                    type="submit"
-                    className="btn transition duration-500 border-none text-lg my-4 px-6 py-2 bg-red-600 rounded-full text-white hover:transform hover:scale-90"
-                  >
-                    Send Message
-                    <i className="submit-icon fa-solid fa-paper-plane fa"></i>
-                  </button>
-                </div>
+
+                <input
+                  type="submit"
+                  value="Send Message"
+                  className="btn cursor-pointer transition duration-500 border-none text-lg my-4 px-6 py-2 bg-red-600 rounded-full text-white hover:transform hover:scale-90"
+                />
               </form>
             </div>
           </div>
+          
           <div className="bg-blue-900 py-10 shadow-xl lg:w-[50%] m-auto my-10 w-full rounded-md">
-            <h2 className="md:text-xl lg:text-2xl text-lg font-semibold text-gray-300">I am on Social</h2>
+            <h2 className="md:text-xl lg:text-2xl text-lg font-semibold text-gray-300">
+              I am on Social
+            </h2>
             <div className="flex flex-col justify-center pt-6 lg:pt-0 mt-10">
               <div className="flex justify-center gap-x-10 flex-row text-white">
                 <Link
