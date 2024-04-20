@@ -16,11 +16,11 @@ const Project = () => {
       </div>
       <div className="flex flex-wrap justify-center">
         {projects.map((item) => (
-          <div className="flex md:flex-row flex-col flex-wrap justify-start relative my-5 md:m-5">
+          <div className="flex md:flex-row flex-col flex-wrap justify-start relative my-5 md:m-5" key={item.id}>
             <img
               src={item.imageLink}
               alt=""
-              className="h-[200px] w-[400px] md:h-[320px] md:w-[600px] rounded-lg brightness-75 hover:brightness-50"
+              className="sm:max-h-48 rounded-lg brightness-75 hover:brightness-50"
             />
 
             <div className="absolute top-6 left-12 text-fuchsia-200 w-full transition duration-500 hover:scale-110">
@@ -31,56 +31,17 @@ const Project = () => {
                 {item.id}
               </p>
             </div>
-            <div className="absolute bottom-2 left-0 flex flex-row justify-around items-center px-4 w-[100%] transition duration-500 hover:scale-110 text-fuchsia-200">
-              <Link
-                to={item.liveLink}
-                target="_blank"
-                className="relative inline-flex items-center px-10 py-2 overflow-hidden text-lg font-bold text-fuchsia-200  border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50"
-              >
-                <span className="absolute left-0 block w-full h-0 transition-all bg-indigo-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
+            <div target="_blank" to={item.liveLink} className="absolute bottom-2 left-0 flex flex-row justify-around items-center px-4 w-[100%] transition duration-500 hover:scale-110 text-fuchsia-200">
+              <Link className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  Live Link
                 </span>
-                <span className="relative">Live Link</span>
               </Link>
-              <Link
-                target="_blank"
-                to={item.gitLink}
-                className="relative inline-flex items-center px-10 py-2 overflow-hidden text-xl font-semibold text-fuchsia-200 border-2 border-indigo-600 rounded-full hover:text-white group hover:bg-gray-50"
-              >
-                <span className="absolute left-0 block w-full h-0 transition-all bg-indigo-400 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
-                <span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
-                  <svg
-                    className="w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    ></path>
-                  </svg>
+              <Link target="_blank" to={item.gitLink} className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  Github Link
                 </span>
-                <span className="relative">Github Link</span>
               </Link>
-             
             </div>
           </div>
         ))}

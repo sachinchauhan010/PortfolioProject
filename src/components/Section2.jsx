@@ -17,7 +17,7 @@ const Section2 = () => {
             <div className="text-blue-500 flex md:justify-start md:items-center ms:flex-row flex-col gap-x-4 lg:gap-x-10 m-2">
               <Link
                 to={"/contact"}
-                className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-2 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center"
+                className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-8 py-2 my-3 w-full m-auto sm:w-fit md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center"
               >
                 Contact me
               </Link>
