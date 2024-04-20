@@ -6,9 +6,8 @@ export const projectList = [
     id: "01",
     liveLink: "https://grubexpress.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/netflixClone.png",
-    webName: "Netflix Clone",
+    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/grubExpress.png",
+    webName: "Grub Express",
   },
   {
     id: "02",
