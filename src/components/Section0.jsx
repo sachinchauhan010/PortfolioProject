@@ -17,7 +17,7 @@ const Section0 = () => {
             learn about my Journey.
           </p>
 
-          <button className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 sm:mx-10 md:my-8 text-lg font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
+          <button className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:mx-0 sm:mx-10 md:my-8 text-lg font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
             Hire me
           </button>
 
@@ -29,7 +29,7 @@ const Section0 = () => {
         <img
           src={photo}
           alt=""
-          className="h-[350px] w-[350px] md:mx-10 m-auto rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 bg-yellow-300 hover:scale-110 duration-500 overflow-hidden text-center"
+          className="h-[350px] w-[350px] md:mx-10 m-auto rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 bg-yellow-300 hover:scale-110 duration-500 overflow-hidden text-center "
         />
 
         <p className="md:text-4xl xl:text-6xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">

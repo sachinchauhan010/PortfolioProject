@@ -4,7 +4,7 @@ import { resumeLink } from "../utils/Data";
 
 const About = () => {
   const downloadResume = () => {
-    fetch(resumeLink)
+    fetch({resumeLink})
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
