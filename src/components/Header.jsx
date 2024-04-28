@@ -14,8 +14,8 @@ const Header = () => {
     <div className="shadow-md box-border w-full top-0 left-0 font-Roboto">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7 bg-from-blue-600 to-green-500">
         {/* logo section */}
-        <Link to={"/"} className="font-bold text-2xl cursor-pointer ">
-          <span className="text-fuchsia-500">SACHIN CHAUHAN</span>
+        <Link to={"/"} className="font-bold text-3xl cursor-pointer">
+          <span className="text-fuchsia-500">SACHIN</span>
         </Link>
         {/* Menu icon */}
         <div
