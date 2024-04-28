@@ -33,7 +33,7 @@ const Section3 = (props) => {
           className=""
         >
           {tools.map((tool) => (
-            <div className="h-36">
+            <div className="h-36" key={tool.id}>
               <img src={tool.imgLink} alt="" className="sm:w-1/3 w-2/5 h-20 mx-auto center" />
               <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start md:px-3 mt-3 sm:mx-20 mx-[40%]">
                 {tool.name}
