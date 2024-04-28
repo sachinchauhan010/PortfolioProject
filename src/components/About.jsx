@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { Education } from "../utils/Data";
-import { resumeLink } from "../utils/Data";
+import  resume  from "../images/Resume.pdf"
 
 const About = () => {
   const downloadResume = () => {
-    fetch({resumeLink})
+    fetch({resume})
       .then((response) => response.blob())
       .then((blob) => {
         const url = window.URL.createObjectURL(new Blob([blob]));
@@ -25,7 +25,7 @@ const About = () => {
       <div className="md:py-10 bg-blue-100 box-border py-20">
         <button
           onClick={downloadResume}
-          className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
+          className="mx-auto sm:w-fit bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
         >
           Download Resume
         </button>
@@ -59,14 +59,14 @@ const About = () => {
           <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
             Skills
           </p>
-          <div className="flex justify-center flex-wrap gap-x-10 p-10">
-            <div className="h-32 md:w-[300px] w-full shadow-xl m-3 p-6 text-center bg-blue-50 rounded-lg">
+          <div className="flex flex-col sm:flex-row justify-center flex-wrap gap-x-10 sm:p-10">
+            <div className="h-32 md:w-[280px] w-full shadow-xl m-3 p-6 text-center bg-blue-50 rounded-lg">
               <p className="text-2xl font-bold text-blue-800 mb-2">
                 Web Development
               </p>
               <Link
                 to={"/project"}
-                className="md:text-lg text-base font-semibold text-center  md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2"
+                className="md:text-lg text-base font-semibold text-center md:text-start px-4 hover:text-blue-700 hover:border-b-blue-600 border-b-2"
               >
                 See My Projects
               </Link>

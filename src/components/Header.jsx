@@ -36,7 +36,7 @@ const Header = () => {
               key={navItems.id}
             >
             
-              <Link to={navItems.link}>
+              <Link to={navItems.link} onClick={()=>{setOpen(false)}}>
                 <div className="text-blue-900 font-semibold hover:text-orange-300">
                   {navItems.name}
                 </div>

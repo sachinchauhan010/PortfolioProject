@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <section className="font-Roboto p-10 text-center bg-blue-50">
+        <section className="font-Roboto px-2 py-6 sm:p-10 text-center bg-blue-50">
           <div className="container flex-col items-center justify-center">
             <h2 className="md:text-2xl lg:text-4xl text-xl font-semibold m-5 text-blue-800">
               Contact Me
@@ -74,7 +74,7 @@ const Contact = () => {
                 <input
                   type="submit"
                   value="Send Message"
-                  className="btn cursor-pointer transition duration-500 border-none text-lg my-4 px-6 py-2 bg-red-600 rounded-full text-white hover:transform hover:scale-90"
+                  className="btn cursor-pointer transition duration-500 border-none text-lg my-4 px-6 py-2 bg-red-600 rounded-full text-white hover:transform hover:scale-110 hover:bg-gray-700 hover:text-gray-50"
                 />
               </form>
             </div>

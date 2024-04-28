@@ -8,10 +8,10 @@ const Footer = () => {
           <div className="py-6 space-y-4">
             <p className="text-lg font-semibold">Sachin 💖 Chauhan</p>
             <div className="self-center md:text-center text-start flex md:flex-row flex-col justify-center items-center space-y-2 md:gap-x-10">
+              <Link to={"/"}>Home</Link>
               <Link to={"/about"}>About</Link>
-              <Link to={"/resume"}>Resume</Link>
               <Link to={"/project"}>Projects</Link>
-              <Link to={"/contact"}>Contact me</Link>
+              <Link to={"/contact"}>Contact</Link>
             </div>
           </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0">
