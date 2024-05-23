@@ -1,19 +1,24 @@
 import { Link } from "react-router-dom";
 import { Education } from "../utils/Data";
-import  resume  from "../images/Resume.pdf"
 
 const About = () => {
   const downloadResume = () => {
-    fetch({resume})
-      .then((response) => response.blob())
+    fetch("https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/myResume.png")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.blob();
+      })
       .then((blob) => {
-        const url = window.URL.createObjectURL(new Blob([blob]));
+        const url = window.URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
         link.setAttribute("download", "Resume.pdf");
         document.body.appendChild(link);
         link.click();
         link.parentNode.removeChild(link);
+        window.URL.revokeObjectURL(url); // Clean up the object URL
       })
       .catch((error) => {
         console.error("Error fetching the resume:", error);
@@ -36,7 +41,7 @@ const About = () => {
         <p className="flex-col justify-center md:items-center item-start md:mx-20 m-4">
           {Education.map((item) => (
             <div
-              key={item.degree} // Added key prop for list items
+              key={item.degree}
               className="w-full lg:w-2/3 m-auto my-5 shadow-lg shadow-orange-200 h-fit text-center p-4 text-fuchsia-600 bg-blue-50"
             >
               <p className="md:text-xl xl:text-2xl text-lg font-bold text-blue-900 text-center my-2">
@@ -45,10 +50,10 @@ const About = () => {
               <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
                 College : {item.college}
               </p>
-              <p className="md:text-xl  text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
+              <p className="md:text-xl text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
                 Percentage/CGPA: {item.marks}
               </p>
-              <p className="md:text-xl  text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
+              <p className="md:text-xl text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
                 Passing Year :{item.year}
               </p>
             </div>

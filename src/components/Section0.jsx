@@ -1,4 +1,5 @@
 import photo from "../images/image.png";
+import { Button1 } from "../utils/button";
 const Section0 = () => {
   return (
     <div>
@@ -17,12 +18,12 @@ const Section0 = () => {
             learn about my Journey.
           </p>
 
-          <button className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:mx-0 sm:mx-10 md:my-8 text-lg font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
-            Hire me
+          <button className="rounded">
+           <Button1 btn={"Hire me"}/>
           </button>
 
-          <button className="px-4 py-2 md:my-8 md:m-4 border-2 rounded-md bg-fuchsia-400 text-lg sm:mx-10 font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
-            Download CV
+          <button className="px-4 py-2 md:my-8 md:m-4 rounded-md sm:mx-10 font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
+          <Button1 btn={"Download CV"}/>
           </button>
         </div>
 

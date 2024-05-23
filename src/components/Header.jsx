@@ -13,11 +13,10 @@ const Header = () => {
   return (
     <div className="shadow-md box-border w-full top-0 left-0 font-Roboto">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7 bg-from-blue-600 to-green-500">
-        {/* logo section */}
         <Link to={"/"} className="font-bold text-3xl cursor-pointer">
           <span className="text-fuchsia-500">SACHIN</span>
         </Link>
-        {/* Menu icon */}
+
         <div
           onClick={() => setOpen(!open)}
           className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7"
@@ -35,10 +34,15 @@ const Header = () => {
               className="md:ml-8 md:my-0 my-6 font-semibold"
               key={navItems.id}
             >
-            
-              <Link to={navItems.link} onClick={()=>{setOpen(false)}}>
-                <div className="text-blue-900 font-semibold hover:text-orange-300">
+              <Link
+                to={navItems.link}
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                <div class="relative text-blue-900 font-semibold hover:text-orange-300 group">
                   {navItems.name}
+                  <div class="absolute bottom-0 left-0 w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
                 </div>
               </Link>
             </li>
