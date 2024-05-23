@@ -1,12 +1,12 @@
 export const IMG_URL =
-  "https://github.com/sachinchauhan010/PortfolioProject/tree/sachin/src/images/";
+  "https://github.com/sachinchauhan010/PortfolioProject/tree/master/src/images/";
 
 export const projectList = [
   {
     id: "01",
     liveLink: "https://grubexpress.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
-    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/grubExpress.png",
+    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/grubExpress.png",
     webName: "Grub Express",
   },
   {
@@ -14,7 +14,7 @@ export const projectList = [
     liveLink: "https://netflixsachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
     imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/netflixClone.png",
+      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/netflixClone.png",
     webName: "Netflix Clone",
   },
   {
@@ -22,7 +22,7 @@ export const projectList = [
     liveLink: "https://sachinpassword.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Password",
     imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/passwordGenerator.png",
+      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/passwordGenerator.png",
     webName: "Password Generator",
   },
   {
@@ -30,7 +30,7 @@ export const projectList = [
     liveLink: "https://hogarbook.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Hogar",
     imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/HogarClone.png",
+      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/HogarClone.png",
     webName: "Hogar Clone",
   },
 
@@ -39,7 +39,7 @@ export const projectList = [
     liveLink: "https://chauhansachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/portfolio",
     imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/portfolioWeb.png",
+      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/portfolioWeb.png",
     webName: "Portfolio",
   },
   {
@@ -47,13 +47,13 @@ export const projectList = [
     liveLink: "https://sidcupfamilygolf.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
     imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/sidCupClone.png",
+      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/sidCupClone.png",
     webName: "Sid Cup Family Golf",
   },
 ];
 
 export const resumeLink =
-  "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/myResume.png";
+  "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/myResume.png";
 export const contactImg =
   "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fcontact-us&psig=AOvVaw0Y-vMNagbAOFUt0y_RzQiY&ust=1710407110741000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKj8wpjx8IQDFQAAAAAdAAAAABAF";
 
@@ -62,47 +62,47 @@ export const Tools=[
   {
     id:1,
     name:"HTML",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Html.png"
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Html.png"
   },
   {
     id:2,
     name:"CSS",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/CSS.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/CSS.png",
   },
   {
     id:3,
     name:"JavaScript",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/JavaScript.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/JavaScript.png",
   },
   {
     id:4,
     name:"Tailwind",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Tailwind.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Tailwind.png",
   },
   {
     id:5,
     name:"Git",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/git.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/git.png",
   },
   {
     id:6,
     name:"Git hub",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/github.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/github.png",
   },
   {
     id:7,
     name:"C++",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/C%2B%2B.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/C%2B%2B.png",
   },
   {
     id:8,
     name:"JAVA",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/Java.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Java.png",
   },
   {
     id:8,
     name:"SQL",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/sql.png",
+    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/sql.png",
   },
 
 ];
