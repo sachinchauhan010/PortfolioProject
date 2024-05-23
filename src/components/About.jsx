@@ -2,38 +2,17 @@ import { Link } from "react-router-dom";
 import { Education } from "../utils/Data";
 
 const About = () => {
-  const downloadResume = () => {
-    fetch("https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/sachin/src/images/myResume.png")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.blob();
-      })
-      .then((blob) => {
-        const url = window.URL.createObjectURL(blob);
-        const link = document.createElement("a");
-        link.href = url;
-        link.setAttribute("download", "Resume.pdf");
-        document.body.appendChild(link);
-        link.click();
-        link.parentNode.removeChild(link);
-        window.URL.revokeObjectURL(url); // Clean up the object URL
-      })
-      .catch((error) => {
-        console.error("Error fetching the resume:", error);
-      });
-  };
 
   return (
     <div>
       <div className="md:py-10 bg-blue-100 box-border py-20">
-        <button
-          onClick={downloadResume}
+        <Link
+          target="_blank"
+          to={"https://drive.google.com/file/d/1jR5y3PHE5-qBRPYU9hnZxs5rWFtb1BY4/view?usp=sharing"}
           className="mx-auto sm:w-fit bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
         >
           Download Resume
-        </button>
+        </Link>
 
         <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
           Education
