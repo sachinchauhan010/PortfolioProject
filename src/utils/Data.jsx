@@ -6,7 +6,7 @@ export const projectList = [
     id: "01",
     liveLink: "https://technokratos-ems.vercel.app/",
     gitLink: "https://github.com/alokVerma749/technokratos-ems",
-    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/grubExpress.png",
+    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Technokratos-ems.png",
     webName: "Technokratos-EMS",
   },
   {
