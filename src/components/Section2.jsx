@@ -1,6 +1,7 @@
 import { Twitter, Gmail, LinkedIn} from "../utils/icons";
 import contactImg from "../images/contactImg.png";
 import { Link } from "react-router-dom";
+import { Button1 } from "../utils/button";
 const Section2 = () => {
   return (
     <>
@@ -17,9 +18,10 @@ const Section2 = () => {
             <div className="text-blue-500 flex md:justify-start md:items-center ms:flex-row flex-col gap-x-4 lg:gap-x-10 m-2">
               <Link
                 to={"/contact"}
-                className="bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-8 py-2 my-3 w-full m-auto sm:w-fit md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center"
+                className="rounded-md px-8 py-1 w-full m-auto sm:w-fit md:my-8 text-lg font-semibold text-center"
               >
-                Contact me
+                <Button1 className="px-4 py-2 md:my-8 text-lg font-semibold text-white text-center" btn={"Contact me"}>
+                </Button1>
               </Link>
               <div className="flex justify-center space-x-6 mt-4 flex-wrap">
                 <Link to={"https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"} target="_blank" className="cursor-pointer">

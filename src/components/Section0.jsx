@@ -17,20 +17,18 @@ const Section0 = () => {
             knowledge of Database also. It's my portfolio website. Here you will
             learn about my Journey.
           </p>
-
-          <button className="rounded">
-           <Button1 btn={"Hire me"}/>
-          </button>
-
-          <button className="px-4 py-2 md:my-8 md:m-4 rounded-md sm:mx-10 font-semibold text-white hover:text-blue-900 w-full sm:w-fit">
-          <Button1 btn={"Download CV"}/>
-          </button>
         </div>
+
+        {/* <img
+          src={photo}
+          alt=""
+          className="h-[350px] w-[350px] md:mx-10 m-auto rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 bg-fuchsia-300 hover:scale-110 duration-500 overflow-hidden text-center "
+        /> */}
 
         <img
           src={photo}
           alt=""
-          className="h-[350px] w-[350px] md:mx-10 m-auto rounded-[50%] box-border shadow-lg lg:shadow-2xl shadow-fuchsia-300 bg-yellow-300 hover:scale-110 duration-500 overflow-hidden text-center "
+          className="object-contain hidden md:block w-[280px] sm:ml-auto sm:mr-auto md:mx-10 p-2 rounded-md shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
         />
 
         <p className="md:text-4xl xl:text-6xl font-bold text-slate-300 read-only font-Roboto absolute md:bottom-0 md:left-2 md:block hidden">

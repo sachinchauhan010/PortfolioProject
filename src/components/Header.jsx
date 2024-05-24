@@ -40,7 +40,7 @@ const Header = () => {
                   setOpen(false);
                 }}
               >
-                <div class="relative text-blue-900 font-semibold hover:text-orange-300 group">
+                <div class="relative text-blue-900 font-semibold hover:text-fuchsia-500 group">
                   {navItems.name}
                   <div class="absolute bottom-0 left-0 w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
                 </div>

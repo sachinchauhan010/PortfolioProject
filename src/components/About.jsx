@@ -9,9 +9,10 @@ const About = () => {
         <Link
           target="_blank"
           to={"https://drive.google.com/file/d/1jR5y3PHE5-qBRPYU9hnZxs5rWFtb1BY4/view?usp=sharing"}
-          className="mx-auto sm:w-fit bg-gradient-to-r from-purple-500 rounded-md to-pink-500 px-4 py-2 my-3 md:my-8 text-lg font-semibold text-white hover:text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
+          className="group mx-auto sm:w-fit bg-gray-300 px-4 py-2 my-3 md:my-8 text-lg font-semibold hover:text-fuchsia-500 text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
         >
           Download Resume
+          <span className="absolute bottom-1 right-0 h-[2px] w-0 bg-blue-900 transition-all delay-200 duration-100 group-hover:w-full" />
         </Link>
 
         <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
@@ -23,17 +24,17 @@ const About = () => {
               key={item.degree}
               className="w-full lg:w-2/3 m-auto my-5 shadow-lg shadow-orange-200 h-fit text-center p-4 text-fuchsia-600 bg-blue-50"
             >
-              <p className="md:text-xl xl:text-2xl text-lg font-bold text-blue-900 text-center my-2">
+              <p className="md:text-xl xl:text-2xl text-lg font-bold text-gray-700 text-center my-2">
                 {item.degree}
               </p>
               <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
-                College : {item.college}
+                <span className="text-blue-900 font-semibold pr-4">College : </span>{item.college}
               </p>
               <p className="md:text-xl text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
-                Percentage/CGPA: {item.marks}
+              <span className="text-blue-900 font-semibold pr-4">Percentage/CGPA :</span> {item.marks}
               </p>
               <p className="md:text-xl text-base lg:text-lg font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
-                Passing Year :{item.year}
+              <span className="text-blue-900 font-semibold pr-4">Passing Year : </span>{item.year}
               </p>
             </div>
           ))}

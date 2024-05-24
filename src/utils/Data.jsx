@@ -4,13 +4,20 @@ export const IMG_URL =
 export const projectList = [
   {
     id: "01",
+    liveLink: "https://technokratos-ems.vercel.app/",
+    gitLink: "https://github.com/alokVerma749/technokratos-ems",
+    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/grubExpress.png",
+    webName: "Technokratos-EMS",
+  },
+  {
+    id: "02",
     liveLink: "https://grubexpress.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
     imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/grubExpress.png",
     webName: "Grub Express",
   },
   {
-    id: "02",
+    id: "03",
     liveLink: "https://netflixsachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
     imageLink:
@@ -18,7 +25,7 @@ export const projectList = [
     webName: "Netflix Clone",
   },
   {
-    id: "03",
+    id: "04",
     liveLink: "https://sachinpassword.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Password",
     imageLink:
@@ -26,7 +33,7 @@ export const projectList = [
     webName: "Password Generator",
   },
   {
-    id: "04",
+    id: "05",
     liveLink: "https://hogarbook.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Hogar",
     imageLink:
@@ -35,7 +42,7 @@ export const projectList = [
   },
 
   {
-    id: "05",
+    id: "06",
     liveLink: "https://chauhansachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/portfolio",
     imageLink:
@@ -43,7 +50,7 @@ export const projectList = [
     webName: "Portfolio",
   },
   {
-    id: "06",
+    id: "07",
     liveLink: "https://sidcupfamilygolf.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
     imageLink:
