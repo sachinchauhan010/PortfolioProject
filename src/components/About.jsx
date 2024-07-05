@@ -8,7 +8,7 @@ const About = () => {
       <div className="md:py-10 bg-blue-100 box-border py-20">
         <Link
           target="_blank"
-          to={"https://drive.google.com/file/d/1jR5y3PHE5-qBRPYU9hnZxs5rWFtb1BY4/view?usp=sharing"}
+          to={"https://drive.google.com/file/d/1eDuEPyM8jUe9gxXzyBJX0v8ZNYvxkhHM/view?usp=sharing"}
           className="group mx-auto sm:w-fit bg-gray-300 px-4 py-2 my-3 md:my-8 text-lg font-semibold hover:text-fuchsia-500 text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
         >
           Download Resume
