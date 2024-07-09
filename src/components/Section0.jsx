@@ -10,10 +10,10 @@ const Section0 = () => {
             <span className="text-fuchsia-500">Sachin Chauhan</span>
           </p>
           <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2">
-            Web Developer
+            Full Stack Developer
           </p>
           <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start px-10 md:p-0">
-            I'm a Web developer and I have Problem Solving Skill. I have
+            I'm a fullstack web developer and I have Problem Solving Skill. I have
             knowledge of Database also. It's my portfolio website. Here you will
             learn about my Journey.
           </p>
