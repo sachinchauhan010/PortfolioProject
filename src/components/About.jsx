@@ -40,7 +40,7 @@ const About = () => {
           ))}
         </p>
 
-        <div className="bg-fuchsia-100 p-3">
+        <div className=" p-3">
           <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">
             Skills
           </p>
