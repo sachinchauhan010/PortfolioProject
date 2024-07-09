@@ -6,15 +6,15 @@ const Section3 = (props) => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 7,
+      items: 9,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 7,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 4,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -33,9 +33,10 @@ const Section3 = (props) => {
           className=""
         >
           {tools.map((tool) => (
-            <div className="h-36" key={tool.id}>
-              <img src={tool.imgLink} alt="" className="sm:w-1/3 w-2/5 h-20 mx-auto center" />
-              <p className="md:text-lg text-base lg:text-xl font-semibold flex flex-wrap text-center md:text-start md:px-3 mt-3 sm:mx-20 mx-[40%]">
+            <div key={tool.id} className="ml-20 sm:ml-0">
+              {/* <img src={tool.imgLink} alt="" className="sm:w-1/3 w-2/5 h-20 mx-auto center" /> */}
+              <p className="text-5xl text-blue-900">{tool.imgLink}</p>
+              <p className="text-lg font-medium text-start py-2">
                 {tool.name}
               </p>
             </div>

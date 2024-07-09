@@ -1,3 +1,25 @@
+import { IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io5";
+import { SiTailwindcss } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
+import { PiFileCppDuotone } from "react-icons/pi";
+import { FaJava } from "react-icons/fa6";
+import { SiMysql } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { IoLogoReact } from "react-icons/io5";
+import Techno from '../images/Technokratos-ems.png'
+import Grub from '../images/grubExpress.png'
+import Netflix from '../images/netflixClone.png' 
+import Hogar from '../images/HogarClone.png'
+import Portfolio from '../images/portfolioWeb.png'
+import SidCupGolf from '../images/sidCupClone.png'
+import Pass from '../images/passwordGenerator.png'
+import Contact from '../images/contactImg.png'
+
 export const IMG_URL =
   "https://github.com/sachinchauhan010/PortfolioProject/tree/master/src/images/";
 
@@ -6,38 +28,35 @@ export const projectList = [
     id: "01",
     liveLink: "https://technokratos-ems.vercel.app/",
     gitLink: "https://github.com/alokVerma749/technokratos-ems",
-    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Technokratos-ems.png",
+    imageLink:Techno,
     webName: "Technokratos-EMS",
   },
   {
     id: "02",
     liveLink: "https://grubexpress.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
-    imageLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/grubExpress.png",
+    imageLink: Grub,
     webName: "Grub Express",
   },
   {
     id: "03",
     liveLink: "https://netflixsachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/netflixClone.png",
+    imageLink:Netflix,
     webName: "Netflix Clone",
   },
   {
     id: "04",
     liveLink: "https://sachinpassword.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Password",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/passwordGenerator.png",
+    imageLink: Pass,
     webName: "Password Generator",
   },
   {
     id: "05",
     liveLink: "https://hogarbook.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/Hogar",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/HogarClone.png",
+    imageLink: Hogar,
     webName: "Hogar Clone",
   },
 
@@ -45,71 +64,86 @@ export const projectList = [
     id: "06",
     liveLink: "https://chauhansachin.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/portfolio",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/portfolioWeb.png",
+    imageLink: Portfolio,
     webName: "Portfolio",
   },
   {
     id: "07",
     liveLink: "https://sidcupfamilygolf.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
-    imageLink:
-      "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/sidCupClone.png",
+    imageLink:SidCupGolf,
     webName: "Sid Cup Family Golf",
   },
 ];
 
-export const resumeLink =
-  "https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/myResume.png";
-export const contactImg =
-  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Fcontact-us&psig=AOvVaw0Y-vMNagbAOFUt0y_RzQiY&ust=1710407110741000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKj8wpjx8IQDFQAAAAAdAAAAABAF";
+export const contactImg = Contact
 
 export const Tools=[
  
   {
     id:1,
     name:"HTML",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Html.png"
+    imgLink: <IoLogoHtml5/>
   },
   {
     id:2,
     name:"CSS",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/CSS.png",
+    imgLink: <IoLogoCss3/>
   },
   {
     id:3,
     name:"JavaScript",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/JavaScript.png",
+    imgLink: <IoLogoJavascript/>
   },
   {
     id:4,
     name:"Tailwind",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Tailwind.png",
+    imgLink:<SiTailwindcss/>
   },
   {
     id:5,
-    name:"Git",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/git.png",
+    name:"Node JS",
+    imgLink:<FaNodeJs/>
   },
   {
     id:6,
-    name:"Git hub",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/github.png",
+    name:"Express JS",
+    imgLink:<SiExpress/>
   },
   {
     id:7,
+    name:"Mongo DB",
+    imgLink:<SiMongodb/>
+  },
+  {
+    id:8,
+    name:"React Js",
+    imgLink:<IoLogoReact/>
+  },
+  {
+    id:9,
+    name:"Git",
+    imgLink: <FaGitAlt/>
+  },
+  {
+    id:10,
+    name:"Git hub",
+    imgLink: <FaGithub/>,
+  },
+  {
+    id:11,
     name:"C++",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/C%2B%2B.png",
+    imgLink:<PiFileCppDuotone/>,
   },
   {
-    id:8,
+    id:12,
     name:"JAVA",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/Java.png",
+    imgLink:<FaJava/>
   },
   {
-    id:8,
+    id:13,
     name:"SQL",
-    imgLink:"https://raw.githubusercontent.com/sachinchauhan010/PortfolioProject/master/src/images/sql.png",
+    imgLink:<SiMysql/>,
   },
 
 ];
@@ -140,7 +174,7 @@ export const Education=[
   {
     id:4,
     degree:"Post Graducation",
-    marks:"0.0 CGPA",
+    marks:"9.35 CGPA",
     college:"Madan Mohan Malaviya University of Technology, Gorkhpur",
     year:"2023-2025",
   },
