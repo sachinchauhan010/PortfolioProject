@@ -6,7 +6,7 @@ import { Tools } from "../utils/Data";
 import Footer from "./Footer";
 const Hero = () => {
   return (
-    <div className="bg-blue-50 box-border">
+    <div className="bg-gray-900 box-border text-white">
       <Section0 />
       <Section1 />
       <Section2/>

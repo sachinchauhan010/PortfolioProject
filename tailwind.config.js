@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        primary: "#01ff06",
+      },
       fontFamily: {
        
         Rampart: ["Rampart One", "cursive", ...defaultTheme.fontFamily.sans],

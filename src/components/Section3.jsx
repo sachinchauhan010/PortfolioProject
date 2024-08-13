@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Divider from "../utils/Divider";
 const Section3 = (props) => {
   const { tools } = props;
   const responsive = {
@@ -24,8 +25,8 @@ const Section3 = (props) => {
 
   return (
     <>
-      <div className="m-2 shadow-xl p-10 rounded-md font-Roboto bg-blue-100">
-        <p className="md:text-2xl xl:text-3xl text-xl font-bold text-blue-900 my-2 text-center md:mb-10">
+      <div className="m-2 shadow-xl p-10 rounded-md font-Roboto">
+        <p className="md:text-2xl xl:text-3xl text-xl font-semibold my-2 text-center md:mb-10">
           Tools & Language I used
         </p>
         <Carousel
@@ -34,15 +35,15 @@ const Section3 = (props) => {
         >
           {tools.map((tool) => (
             <div key={tool.id} className="ml-20 sm:ml-0">
-              {/* <img src={tool.imgLink} alt="" className="sm:w-1/3 w-2/5 h-20 mx-auto center" /> */}
-              <p className="text-5xl text-blue-900">{tool.imgLink}</p>
-              <p className="text-lg font-medium text-start py-2">
+              <p className="text-5xl text-primary">{tool.imgLink}</p>
+              <p className="text-lg font-light text-start py-2">
                 {tool.name}
               </p>
             </div>
           ))}
         </Carousel>
       </div>
+    <Divider/>
     </>
   );
 };

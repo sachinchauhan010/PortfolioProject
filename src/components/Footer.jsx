@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <section>
-      <footer className="dark:bg-gray-700 dark:text-gray-50">
+      <footer className="bg-gray-900">
         <div className="container flex md:flex-row flex-col justify-between p-4 m-0 md:p-8 lg:flex-row dark:divide-gray-400">
           <div className="py-6 space-y-4">
             <p className="text-lg font-semibold">Sachin 💖 Chauhan</p>
             <div className="self-center md:text-center text-start flex md:flex-row flex-col justify-center items-center space-y-2 md:gap-x-10">
-              <Link to={"/"}>Home</Link>
-              <Link to={"/about"}>About</Link>
-              <Link to={"/project"}>Projects</Link>
-              <Link to={"/contact"}>Contact</Link>
+              <Link to={"/"} className="hover:text-primary">Home</Link>
+              <Link to={"/about"} className="hover:text-primary">About</Link>
+              <Link to={"/project"} className="hover:text-primary">Projects</Link>
+              <Link to={"/contact"} className="hover:text-primary">Contact</Link>
             </div>
           </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0">
-            <div className="flex justify-center gap-x-10 flex-row ">
+            <div className="flex justify-center gap-x-10 flex-row text-primary">
               <Link
                 to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
                 target="_blank"
