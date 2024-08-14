@@ -34,7 +34,7 @@ const Section0 = () => {
               {LinkedIn}
             </Link>
             <Link to="/">{Insta}</Link>
-            <Link to="010sssachin@gmail.com" target="_blank">
+            <Link to="/contact" target="_blank">
               {Gmail}
             </Link>
           </div>
