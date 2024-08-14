@@ -1,5 +1,3 @@
-import { Gmail, Twitter, LinkedIn } from "../utils/icons";
-import { Link } from "react-router-dom";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 const Contact = () => {

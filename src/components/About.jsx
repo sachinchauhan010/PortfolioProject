@@ -12,11 +12,13 @@ const About = () => {
         <Link
           target="_blank"
           to={"https://drive.google.com/file/d/1eDuEPyM8jUe9gxXzyBJX0v8ZNYvxkhHM/view?usp=sharing"}
-          className="group mx-auto sm:w-fit px-4 py-2 my-3 md:my-8 text-lg font-normal text-center absolute md:top-20 md:right-10 right-[24%] top-20"
+          className="group sm:w-fit px-4 py-2 md:my-8 text-lg font-normal text-primary flex justify-end mx-auto relative"
+          style={{ alignSelf: 'flex-end' }}
         >
           Download Resume
           <span className="absolute bottom-1 right-0 h-[2px] w-0 bg-primary transition-all delay-200 duration-100 group-hover:w-full" />
         </Link>
+
         <p className="flex flex-col justify-start md:items-center item-start md:mx-20 m-4">
           {Education.map((item) => (
             <div
@@ -26,14 +28,14 @@ const About = () => {
               <p className="md:text-xl xl:text-2xl text-lg font-semibold text-primary text-start my-2">
                 {item.degree}
               </p>
-              <p className="md:text-base text-sm xl:text-xl font-light flex flex-wrap">
-                <span className="font-normal pr-4 text-primary">College : </span>{item.college}
+              <p className="md:text-base text-sm xl:text-xl font-light flex">
+                <span className="font-normal pr-4 text-primary">College: </span>{item.college}
               </p>
-              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap text-wrap">
-                <span className="font-normal pr-4 text-primary text-wrap">Marks : </span>{item.marks}
+              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex">
+                <span className="font-normal pr-4 text-primary text-wrap">Marks: </span>{item.marks}
               </p>
-              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap">
-                <span className="font-normal pr-4 text-primary">Year : </span>{item.year}
+              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex">
+                <span className="font-normal pr-4 text-primary">Year: </span>{item.year}
               </p>
             </div>
           ))}

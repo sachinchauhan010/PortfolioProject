@@ -1,19 +1,25 @@
 import { Insta, Gmail, Twitter, LinkedIn } from "../utils/icons";
 import { Link } from "react-router-dom";
 import Divider from "../utils/Divider";
+
 const Footer = () => {
+  
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <section className="mt-4">
-      <Divider/>
+      <Divider />
       <footer className="text-white">
         <div className="container flex md:flex-row flex-col justify-between p-4 m-0 md:p-8 lg:flex-row dark:divide-gray-400">
           <div className="py-6 space-y-4">
             <p className="text-lg font-semibold">Sachin 💖 Chauhan</p>
             <div className="self-center md:text-center text-start flex md:flex-row flex-col justify-center items-center space-y-2 md:gap-x-10">
-              <Link to={"/"} className="hover:text-primary">Home</Link>
-              <Link to={"/about"} className="hover:text-primary">About</Link>
-              <Link to={"/project"} className="hover:text-primary">Projects</Link>
-              <Link to={"/contact"} className="hover:text-primary">Contact</Link>
+              <Link to="/" className="hover:text-primary" onClick={scrollToTop}>Home</Link>
+              <Link to="/about" className="hover:text-primary" onClick={scrollToTop}>About</Link>
+              <Link to="/project" className="hover:text-primary" onClick={scrollToTop}>Projects</Link>
+              <Link to="/contact" className="hover:text-primary" onClick={scrollToTop}>Contact</Link>
             </div>
           </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0">
@@ -31,7 +37,7 @@ const Footer = () => {
                 {LinkedIn}
               </Link>
               <Link to="/">{Insta}</Link>
-              <Link to="010sssachin@gmail.com" target="_blank">
+              <Link to="mailto:010sssachin@gmail.com" target="_blank">
                 {Gmail}
               </Link>
             </div>
@@ -41,4 +47,5 @@ const Footer = () => {
     </section>
   );
 };
+
 export default Footer;

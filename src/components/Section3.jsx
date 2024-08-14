@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Divider from "../utils/Divider";
+
 const Section3 = (props) => {
   const { tools } = props;
   const responsive = {
