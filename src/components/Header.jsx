@@ -13,8 +13,9 @@ const Header = () => {
   return (
     <div className="shadow-md box-border w-full top-0 left-0 font-Roboto">
       <div className="md:flex items-center justify-between py-2 md:px-10 px-7">
-        <Link to={"/"} className="font-bold text-3xl cursor-pointer">
-          <span className="text-primary">𝒮𝒜𝒞𝐻𝐼𝒩</span>
+        <Link to={"/"} className="font-normal text-2xl cursor-pointer text-primary text-center">
+          S<span className="text-white">achin</span>
+          <span className="text-primary"> C<span className="text-white">hauhan</span></span>
         </Link>
 
         <div
