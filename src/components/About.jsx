@@ -5,14 +5,14 @@ const About = () => {
 
   return (
     <div>
-      <div className="md:py-10 bg-blue-100 box-border py-20">
+      <div className="md:py-10 bg-gray-900 text-white box-border py-20">
         <Link
           target="_blank"
           to={"https://drive.google.com/file/d/1eDuEPyM8jUe9gxXzyBJX0v8ZNYvxkhHM/view?usp=sharing"}
-          className="group mx-auto sm:w-fit bg-gray-300 px-4 py-2 my-3 md:my-8 text-lg font-semibold hover:text-fuchsia-500 text-blue-900 text-center absolute md:top-20 md:right-10 right-[24%] top-20"
+          className="group mx-auto sm:w-fit px-4 py-2 my-3 md:my-8 text-lg font-semibold text-center absolute md:top-20 md:right-10 right-[24%] top-20"
         >
           Download Resume
-          <span className="absolute bottom-1 right-0 h-[2px] w-0 bg-blue-900 transition-all delay-200 duration-100 group-hover:w-full" />
+          <span className="absolute bottom-1 right-0 h-[2px] w-0 bg-primary transition-all delay-200 duration-100 group-hover:w-full" />
         </Link>
 
         <p className="md:text-3xl xl:text-4xl font-bold text-2xl text-gray-600 md:my-3 my-2 text-center">

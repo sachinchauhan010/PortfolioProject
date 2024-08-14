@@ -1,48 +1,27 @@
 import { projectList } from "../utils/Data";
 import { Link } from "react-router-dom";
-import { Button1 } from "../utils/button";
+
+import ProjectCard from './ProjetCard'
+
 const Project = () => {
   const projects = projectList;
   return (
-    <div className="font-Roboto m-5 box-border text-white">
+    <div className="font-Roboto box-border text-white m-2 md:m-4">
       <div className="flex justify-evenly items-center md:flex-row flex-col my-10">
-        <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center ">
+        <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center text-primary">
           Projects that I had made
         </p>
-        <button className="border-2 py-2 px-4 rounded hover:text-primary hover:border-primary">
+        <button className="border-2 py-1 mt-3 md:mt-0 px-4 rounded hover:text-primary hover:border-primary">
           <Link
             to={"/contact"}
           >Let's Discuss your Project</Link>
         </button>
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-col md:flex-row flex-wrap gap-5 justify-start relative items-center">
         {projects.map((item) => (
-          <div className="flex md:flex-row flex-col flex-wrap justify-start relative my-5 md:m-5" key={item.id}>
-            <img
-              src={item.imageLink}
-              alt=""
-              className="sm:max-h-48 rounded-lg brightness-100 hover:brightness-50"
-            />
-
-            <div className="absolute top-6 left-12 text-gray-100 w-full transition duration-500 hover:scale-110">
-              <p className="text-xl md:text-2xl lg:text-4xl font-semibold">
-                {item.webName}
-              </p>
-
-            </div>
-            <div className="absolute bottom-2 left-0 flex flex-row justify-around items-center px-4 w-[100%] transition duration-500 hover:scale-110">
-              <Link target="_blank" to={item?.liveLink} >Live Link
-              </Link>
-              <Link target="_blank" to={item.gitLink} className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                  Github Link
-                </span>
-              </Link>
-            </div>
-          </div>
+          <ProjectCard item={item} key={item.id}/>
         ))}
       </div>
-      <div className="center"></div>
     </div>
   );
 };

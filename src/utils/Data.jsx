@@ -26,17 +26,19 @@ export const IMG_URL =
 export const projectList = [
   {
     id: "01",
-    liveLink: "https://technokratos-ems.vercel.app/",
-    gitLink: "https://github.com/alokVerma749/technokratos-ems",
-    imageLink:Techno,
-    webName: "Technokratos-EMS",
-  },
-  {
-    id: "02",
     liveLink: "https://grubexpress.vercel.app/",
     gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
     imageLink: Grub,
     webName: "Grub Express",
+    techStack: ["MERN", "Redux Toolkit", "Tailwind", "Material UI"]
+  },
+  {
+    id: "02",
+    liveLink: "https://technokratos-ems.vercel.app/",
+    gitLink: "https://github.com/alokVerma749/technokratos-ems",
+    imageLink:Techno,
+    webName: "Technokratos-EMS",
+    techStack:["MERN","Next Js", "Tailwind", "Material UI"]
   },
   {
     id: "03",
@@ -44,6 +46,7 @@ export const projectList = [
     gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
     imageLink:Netflix,
     webName: "Netflix Clone",
+    techStack:["HTML", "CSS"]
   },
   {
     id: "04",
@@ -51,6 +54,7 @@ export const projectList = [
     gitLink: "https://github.com/sachinchauhan010/Password",
     imageLink: Pass,
     webName: "Password Generator",
+    techStack: ["HTML", "CSS", "JavaScript"]
   },
   {
     id: "05",
@@ -58,6 +62,7 @@ export const projectList = [
     gitLink: "https://github.com/sachinchauhan010/Hogar",
     imageLink: Hogar,
     webName: "Hogar Clone",
+    techStack:["HTML", "CSS", "JavaScript"]
   },
 
   {
@@ -66,6 +71,7 @@ export const projectList = [
     gitLink: "https://github.com/sachinchauhan010/portfolio",
     imageLink: Portfolio,
     webName: "Portfolio",
+    techStack: ["HTML", "CSS", "JavaScript"]
   },
   {
     id: "07",
@@ -73,6 +79,7 @@ export const projectList = [
     gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
     imageLink:SidCupGolf,
     webName: "Sid Cup Family Golf",
+    techStack:["HTML", "CSS"]
   },
 ];
 

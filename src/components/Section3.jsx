@@ -43,7 +43,6 @@ const Section3 = (props) => {
           ))}
         </Carousel>
       </div>
-    <Divider/>
     </>
   );
 };
