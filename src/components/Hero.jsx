@@ -5,7 +5,7 @@ import Section3 from "./Section3";
 import { Tools } from "../utils/Data";
 const Hero = () => {
   return (
-    <div className="bg-gray-900 box-border text-white m-2 md:m-4">
+    <div className="bg-gray-900 box-border text-white p-2 md:p-4">
       <Section0 />
       <Section1 />
       <Section2/>

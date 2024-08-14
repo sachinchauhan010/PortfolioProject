@@ -6,7 +6,7 @@ import ProjectCard from './ProjetCard'
 const Project = () => {
   const projects = projectList;
   return (
-    <div className="font-Roboto box-border text-white m-2 md:m-4">
+    <div className="font-Roboto box-border text-white p-2 md:p-4">
       <div className="flex justify-evenly items-center md:flex-row flex-col my-10">
         <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center text-primary">
           Projects that I had made
