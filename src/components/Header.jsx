@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         {/* linke items */}
         <ul
-          className={`md:flex md:gap-x-5 md:text-lg md:font-semibold md:items-center md:pb-0  absolute md:static md:z-auto z-[10] shadow-xl md:shadow-none left-0 w-full md:w-auto md:pl-0 pl-4  transition-all duration-500 ease-in ${
+          className={`md:flex md:gap-x-5 md:text-lg md:font-semibold md:items-center md:pb-0 absolute md:static md:z-auto z-[10] shadow-xl md:shadow-none left-0 w-full md:w-auto md:pl-0 pl-4  transition-all duration-500 ease-in bg-gray-900 ${
             open ? "top-12" : "top-[-490px]"
           }`}
         >
@@ -42,7 +42,7 @@ const Header = () => {
               >
                 <div class="relative text-white font-normal hover:text-primary group">
                   {navItems.name}
-                  <div class="absolute bottom-0 left-0 w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
+                  <div class="absolute bottom-0 left-0 w-20 h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
                 </div>
               </Link>
             </li>

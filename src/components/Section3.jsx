@@ -25,7 +25,7 @@ const Section3 = (props) => {
 
   return (
     <>
-      <div className="m-2 shadow-xl p-10 rounded-md font-Roboto">
+      <div className="p-10 font-Roboto">
         <p className="md:text-2xl xl:text-3xl text-xl font-semibold my-2 text-center md:mb-10">
           Tools & Language I used
         </p>
@@ -43,7 +43,6 @@ const Section3 = (props) => {
           ))}
         </Carousel>
       </div>
-    <Divider/>
     </>
   );
 };

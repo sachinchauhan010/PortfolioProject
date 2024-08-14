@@ -1,4 +1,4 @@
-import { Twitter, Gmail, LinkedIn } from "../utils/icons";
+import { Twitter, Gmail, LinkedIn, Insta } from "../utils/icons.jsx";
 import contactImg from "../images/contactImg.png";
 import { Link } from "react-router-dom";
 
@@ -6,38 +6,37 @@ const Section2 = () => {
   return (
     <>
       <div className="">
-        <div className="md:flex justify-center items-center m-2 gap-x-20 rounded-lg text-center p-5">
+        <div className="sm:flex justify-start sm:justify-around items-center m-2 gap-x-20 rounded-lg p-5">
           <div>
             <p className="md:text-3xl xl:text-4xl text-2xl font-bold md:my-4 my-2">
               Get In Touch
             </p>
-            <p className="md:text-2xl xl:text-3xl font-bold text-xxl text-primary">
+            <p className="md:text-2xl xl:text-3xl font-normal text-xxl text-primary">
               Have a Project in Your Mind
             </p>
-
-            <div className="flex md:justify-start md:items-center ms:flex-row flex-col gap-x-4 lg:gap-x-10 m-2">
-              <button className="border-2 py-2 px-4 rounded my-5 hover:text-primary hover:border-primary">
+              <button className="border-2 py-2 px-4 rounded my-5 hover:text-primary hover:border-primary w-fit md:mx-auto">
                 <Link
                   target="_blank"
                   to={"/contact"}
-                >Download CV</Link>
+                >Contact me</Link>
               </button>
-              <div className="flex justify-center space-x-6 mt-4 flex-wrap">
-                <Link to={"https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"} target="_blank" className="cursor-pointer">
-                  {Twitter}
-                </Link>
-                <Link to={"010sssachin@gmail.com"} target="_blank" className="cursor-pointer">
-                  {Gmail}
-                </Link>
-                <Link
-                  to={
-                    "https://www.linkedin.com/in/sachinchauhan010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                  } target="_blank"
-                  className="cursor-pointer"
-                >
-                  {LinkedIn}
-                </Link>
-              </div>
+              <div className="flex justify-start md:justify-start gap-x-10 flex-row text-primary py-5">
+              <Link
+                to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
+                target="_blank"
+              >
+                {Twitter}
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/sachinchauhan010?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+              >
+                {LinkedIn}
+              </Link>
+              <Link to="/">{Insta}</Link>
+              <Link to="010sssachin@gmail.com" target="_blank">
+                {Gmail}
+              </Link>
             </div>
           </div>
           <div>

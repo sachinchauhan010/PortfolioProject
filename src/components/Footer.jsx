@@ -1,9 +1,11 @@
 import { Insta, Gmail, Twitter, LinkedIn } from "../utils/icons";
 import { Link } from "react-router-dom";
+import Divider from "../utils/Divider";
 const Footer = () => {
   return (
-    <section>
-      <footer className="bg-gray-900">
+    <section className="mt-4">
+      <Divider/>
+      <footer className="text-white">
         <div className="container flex md:flex-row flex-col justify-between p-4 m-0 md:p-8 lg:flex-row dark:divide-gray-400">
           <div className="py-6 space-y-4">
             <p className="text-lg font-semibold">Sachin 💖 Chauhan</p>
