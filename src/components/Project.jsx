@@ -8,7 +8,7 @@ const Project = () => {
   return (
     <div className="font-Roboto box-border text-white p-2 md:p-4">
       <div className="flex justify-evenly items-center md:flex-row flex-col my-10">
-        <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center text-primary">
+        <p className="text-xl md:text-2xl lg:text-4xl font-semibold md:font-bold text-center">
           Projects that I had made
         </p>
         <button className="border-2 py-1 mt-3 md:mt-0 px-4 rounded hover:text-primary hover:border-primary">

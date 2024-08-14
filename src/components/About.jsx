@@ -26,13 +26,13 @@ const About = () => {
               <p className="md:text-xl xl:text-2xl text-lg font-semibold text-primary text-start my-2">
                 {item.degree}
               </p>
-              <p className="md:text-base text-sm xl:text-xl font-light flex flex-wrap md:px-10 md:p-0">
+              <p className="md:text-base text-sm xl:text-xl font-light flex flex-wrap">
                 <span className="font-normal pr-4 text-primary">College : </span>{item.college}
               </p>
-              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap md:px-10 md:p-0 text-wrap">
+              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap text-wrap">
                 <span className="font-normal pr-4 text-primary text-wrap">Marks : </span>{item.marks}
               </p>
-              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap md:px-10 md:p-0">
+              <p className="md:text-base text-sm lg:text-lg xl:text-xl font-light flex flex-wrap">
                 <span className="font-normal pr-4 text-primary">Year : </span>{item.year}
               </p>
             </div>

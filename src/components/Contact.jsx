@@ -66,7 +66,7 @@ const Contact = () => {
             <h2 className="md:text-2xl lg:text-4xl text-xl font-semibold m-5">
               Contact Me
             </h2>
-            <h3 className="md:text-xl lg:text-2xl text-lg font-normal text-start">
+            <h3 className="md:text-xl lg:text-2xl text-lg font-normal text-start md:text-center">
               Questions, Thoughts, Or Just Want To Say Hello?
             </h3>
 

@@ -42,7 +42,7 @@ const Header = () => {
               >
                 <div class="relative text-white font-normal hover:text-primary group">
                   {navItems.name}
-                  <div class="absolute bottom-0 left-0 w-20 h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
+                  <div class="absolute bottom-0 left-0 w-full h-[2px] bg-current scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300 ease-in-out origin-left"></div>
                 </div>
               </Link>
             </li>

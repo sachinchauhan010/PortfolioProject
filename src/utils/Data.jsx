@@ -182,7 +182,7 @@ export const Education=[
     id:4,
     degree:"Post Graducation",
     marks:"9.35 CGPA",
-    college:"Madan Mohan Malaviya University of Technology, Gorkhpur",
+    college:"Madan Mohan Malviya University of Technology, Gorkhpur",
     year:"2023-2025",
   },
 ]
