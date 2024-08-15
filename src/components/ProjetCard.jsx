@@ -11,7 +11,7 @@ function ProjetCard({ item }) {
       <div className="p-2">
         <p className="">{item.webName}</p>
         <div className="flex justify-start">
-          {item.techStack.map((tech) => <p className="text-primary">{tech + " "} </p>)}
+          {item.techStack.map((tech) => <p className="text-primary">{tech}&nbsp;&nbsp; </p>)}
         </div>
         <div className="flex justify-between items-end mt-2">
             <Link target="_blank" to={item.liveLink} className="hover:text-primary relative group">Live Link
