@@ -11,7 +11,7 @@ const About = () => {
         </p>
         <Link
           target="_blank"
-          to={"https://drive.google.com/file/d/1eDuEPyM8jUe9gxXzyBJX0v8ZNYvxkhHM/view?usp=sharing"}
+          to={"https://drive.google.com/file/d/1B89VtySMi_1kW6GX_R93xmptrjrBlWff/view?usp=sharing"}
           className="group sm:w-fit px-4 py-2 md:my-8 text-lg font-normal text-primary flex justify-end mx-auto relative"
           style={{ alignSelf: 'flex-end' }}
         >

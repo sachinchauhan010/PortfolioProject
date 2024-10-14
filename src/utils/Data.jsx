@@ -19,69 +19,87 @@ import Portfolio from '../images/portfolioWeb.png'
 import SidCupGolf from '../images/sidCupClone.png'
 import Pass from '../images/passwordGenerator.png'
 import Contact from '../images/contactImg.png'
+import TrackMyClass from '../images/trackmyclass.png'
+import TransferX from '../images/transferx.png'
 
 export const IMG_URL =
   "https://github.com/sachinchauhan010/PortfolioProject/tree/master/src/images/";
 
-export const projectList = [
-  {
-    id: "01",
-    liveLink: "https://grubexpress.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
-    imageLink: Grub,
-    webName: "Grub Express",
-    techStack: ["MERN", "Redux Toolkit", "Tailwind", "Material UI"]
-  },
-  {
-    id: "02",
-    liveLink: "https://technokratos-ems.vercel.app/",
-    gitLink: "https://github.com/alokVerma749/technokratos-ems",
-    imageLink:Techno,
-    webName: "Technokratos-EMS",
-    techStack:["MERN","Next Js", "Tailwind", "Material UI"]
-  },
-  {
-    id: "03",
-    liveLink: "https://netflixsachin.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
-    imageLink:Netflix,
-    webName: "Netflix Clone",
-    techStack:["HTML", "CSS"]
-  },
-  {
-    id: "04",
-    liveLink: "https://sachinpassword.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/Password",
-    imageLink: Pass,
-    webName: "Password Generator",
-    techStack: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    id: "05",
-    liveLink: "https://hogarbook.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/Hogar",
-    imageLink: Hogar,
-    webName: "Hogar Clone",
-    techStack:["HTML", "CSS", "JavaScript"]
-  },
-
-  {
-    id: "06",
-    liveLink: "https://chauhansachin.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/portfolio",
-    imageLink: Portfolio,
-    webName: "Portfolio",
-    techStack: ["HTML", "CSS", "JavaScript"]
-  },
-  {
-    id: "07",
-    liveLink: "https://sidcupfamilygolf.vercel.app/",
-    gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
-    imageLink:SidCupGolf,
-    webName: "Sid Cup Family Golf",
-    techStack:["HTML", "CSS"]
-  },
-];
+  export const projectList = [
+    {
+      id: "01",
+      liveLink: "https://grubexpress.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/GrubExpressApp",
+      imageLink: Grub,
+      webName: "Grub Express",
+      techStack: ["MERN", "Redux Toolkit", "Tailwind", "Material UI"]
+    },
+    {
+      id: "02",
+      liveLink: "https://trackmyclass.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/SchedulifyFrontend",
+      imageLink: TrackMyClass,
+      webName: "Track My Class",
+      techStack: ["TypeScript", "MERN", "Shadcn", "Tailwind", "JavaScript"]
+    },
+    {
+      id: "03",
+      liveLink: "https://www.transferx.in",
+      gitLink: "https://github.com/mohdadnaanazam/transferx",
+      imageLink: TransferX,
+      webName: "TransferX",
+      techStack: ["Next Js", "TypeScript", "AWS", "Tailwind", "Shadcn UI"]
+    },
+    {
+      id: "04",
+      liveLink: "https://technokratos-ems.vercel.app/",
+      gitLink: "https://github.com/alokVerma749/technokratos-ems",
+      imageLink: Techno,
+      webName: "Technokratos-EMS",
+      techStack: ["MERN", "Next Js", "Tailwind", "Material UI"]
+    },
+    {
+      id: "05",
+      liveLink: "https://netflixsachin.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/Netflix_clone",
+      imageLink: Netflix,
+      webName: "Netflix Clone",
+      techStack: ["HTML", "CSS"]
+    },
+    {
+      id: "06",
+      liveLink: "https://sachinpassword.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/Password",
+      imageLink: Pass,
+      webName: "Password Generator",
+      techStack: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      id: "07",
+      liveLink: "https://hogarbook.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/Hogar",
+      imageLink: Hogar,
+      webName: "Hogar Clone",
+      techStack: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      id: "08",
+      liveLink: "https://chauhansachin.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/portfolio",
+      imageLink: Portfolio,
+      webName: "Portfolio",
+      techStack: ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      id: "09",
+      liveLink: "https://sidcupfamilygolf.vercel.app/",
+      gitLink: "https://github.com/sachinchauhan010/sidcup_Family_Golf",
+      imageLink: SidCupGolf,
+      webName: "Sid Cup Family Golf",
+      techStack: ["HTML", "CSS"]
+    }
+  ];
+  
 
 export const contactImg = Contact
 

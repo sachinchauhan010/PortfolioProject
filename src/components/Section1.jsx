@@ -1,11 +1,11 @@
-import photo from "../images/image.png";
 import Divider from "../utils/Divider.jsx";
+import Photo2 from '../images/SachinPhoto2.png'
 const Section1 = () => {
   return (
     <>
       <div className="flex justify-center items-center md:p-10 p-4 md:gap-x-10 text-start md:text-start font-Roboto rounded-md shadow-xl">
         <img
-          src={photo}
+          src={Photo2}
           alt=""
           className="object-contain hidden md:block w-[350px] sm:ml-auto sm:mr-auto md:mx-10 p-2 rounded-md shadow-lg lg:shadow-2xl shadow-fuchsia-300 m-6 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
         />

@@ -14,13 +14,13 @@ const Section2 = () => {
             <p className="md:text-2xl xl:text-3xl font-normal text-xxl text-primary">
               Have a Project in Your Mind
             </p>
-              <button className="border-2 py-2 px-4 rounded my-5 hover:text-primary hover:border-primary w-fit md:mx-auto">
-                <Link
-                  target="_blank"
-                  to={"/contact"}
-                >Contact me</Link>
-              </button>
-              <div className="flex justify-start md:justify-start gap-x-10 flex-row text-primary py-5">
+            <button className="border-2 py-2 px-4 rounded my-5 hover:text-primary hover:border-primary w-fit md:mx-auto">
+              <Link
+                target="_blank"
+                to={"/contact"}
+              >Contact me</Link>
+            </button>
+            <div className="flex justify-start md:justify-start gap-x-10 flex-row text-primary py-5">
               <Link
                 to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
                 target="_blank"
@@ -33,10 +33,8 @@ const Section2 = () => {
               >
                 {LinkedIn}
               </Link>
-              <Link to="/">{Insta}</Link>
-              <Link to="010sssachin@gmail.com" target="_blank">
-                {Gmail}
-              </Link>
+              <Link to="https://www.instagram.com/10_sach_in/" target="_blank">{Insta}</Link>
+              <Link to="/contact">{Gmail}</Link>
             </div>
           </div>
           <div>

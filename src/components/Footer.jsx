@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0">
             <div className="flex justify-center gap-x-10 flex-row text-primary">
-              <Link
+            <Link
                 to="https://x.com/SACHINC28888156?t=TsUIVfVpJrlF18rNhnrOSQ&s=09"
                 target="_blank"
               >
@@ -36,10 +36,8 @@ const Footer = () => {
               >
                 {LinkedIn}
               </Link>
-              <Link to="/">{Insta}</Link>
-              <Link to="mailto:010sssachin@gmail.com" target="_blank">
-                {Gmail}
-              </Link>
+              <Link to="https://www.instagram.com/10_sach_in/" target="_blank">{Insta}</Link>
+              <Link to="/contact">{Gmail}</Link>
             </div>
           </div>
         </div>
